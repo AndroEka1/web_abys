@@ -1,0 +1,400 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.contactMoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c21;
+}
+
+.left-info .phoneNumber {
+  color: blue;
+}
+
+.contact-info .moto {
+  color: #ffff;
+  padding-right: 10px;
+}
+
+.left-info img {
+  padding-right: 7px;
+}
+
+.left-info a {
+  color: white;
+  padding-right: 10px;
+}
+
+.contactMoto .moto {
+  padding-left: 175px;
+}
+
+.socialMediaIcons {
+  padding-right: 110px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.left-info {
+  display: flex;
+  align-items: center;
+  padding-right: 20px; /* Tambahkan margin antara info kontak dan ikon sosial media */
+}
+
+/* Gantilah atribut src dengan URL gambar yang sesuai */
+.phone,
+.gmail {
+  width: 20px; /* Atur lebar ikon sesuai kebutuhan */
+  height: 20px; /* Atur tinggi ikon sesuai kebutuhan */
+}
+
+/* Gantilah warna teks sesuai kebutuhan */
+.moto,
+.phoneNumber,
+.gmail-name {
+  color: black;
+}
+
+/* Gantilah warna latar belakang dan ukuran ikon sesuai kebutuhan */
+.social-media-icons img {
+  width: 30px; /* Atur lebar ikon sosial media sesuai kebutuhan */
+  height: 30px; /* Atur tinggi ikon sosial media sesuai kebutuhan */
+  padding-right: 5px;
+}
+
+/* Bagian Section pada class features */
+.features {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 50px;
+}
+
+.logo-content {
+  width: 70px; /* Atur lebar gambar sesuai kebutuhan */
+  height: auto; /* Atur tinggi gambar sesuai kebutuhan */
+  margin-right: 10px; /* Tambahkan margin antara gambar dan daftar */
+}
+
+.features ul {
+  list-style-type: none; /* Hilangkan bullet points pada daftar */
+  display: flex; /* Tampilkan daftar secara horizontal */
+  margin: 0;
+  padding: 0;
+  gap: 45px;
+  color: #8d99ae;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features li {
+  font-size: 17px; /* Atur ukuran font untuk teks di dalam daftar */
+  margin-right: 15px; /* Tambahkan margin antara elemen daftar */
+  cursor: pointer; /* Ganti kursor menjadi pointer untuk menunjukkan tindakan dapat di-klik */
+  font-weight: bold;
+}
+
+#call {
+  width: 75px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #2cba6c;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#buttonCall {
+  padding-top: 12px;
+}
+
+#menuList {
+  font-size: medium;
+}
+
+/* Menetapkan warna teks tautan menjadi abu-abu */
+#menuList li a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: #6c757d; /* Warna teks tautan */
+}
+
+/* Mengubah warna tautan menjadi biru tua saat kursor diarahkan */
+#menuList li a:hover {
+  color: #0000ff; /* Warna teks tautan saat dihover (biru tua) */
+}
+
+.promotionContent {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.PromotionImage p {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.promotionImageOne {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+}
+
+.promotionImageTwo {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bagian konten */
+/* Kode untuk membagi menjadi 4 kolom */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom dengan lebar yang sama */
+  gap: 10px; /* Jarak antar kolom */
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 150px;
+}
+
+.column {
+  padding: 20px;
+  border: none;
+  background-color: #f0f0f0; /* Ganti warna latar belakang sesuai kebutuhan */
+}
+
+/* Styling tambahan sesuai kebutuhan Anda */
+.column {
+  color: #333;
+  text-align: center; /* Pusatkan teks dalam kolom */
+}
+
+.columnOne {
+  background-color: lightblue;
+}
+
+.columnOne img {
+  width: 400px;
+}
+
+.listPackageInternet {
+  text-align: center;
+}
+
+.columnTwo {
+  text-align: center;
+}
+
+.columnTwo .packageOne {
+  font-size: 40px;
+}
+
+.packagePriceOne,
+.packagePriceTwo,
+.packagePriceThree {
+  font-size: 50px;
+  padding-top: 0;
+  border-bottom: 1px solid black;
+}
+
+.columnTwo ul hr {
+  border-bottom: #8d99ae;
+  width: 90px;
+  /* margin: 0 auto; */
+  opacity: 0.7px;
+  width: 190px;
+}
+
+.columnTwo ul hr.lineBreak {
+  width: 120px; /* Mengatur lebar garis pemisah menjadi 120px */
+  margin: 0 auto; /* Pusatkan garis pemisah */
+  opacity: 0.7;
+}
+
+/* Bagian kolom li daftar paket */
+.horizontal-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.horizontal-list li {
+  margin-right: 10px;
+}
+
+#buyOne {
+  display: flex;
+  align-items: center;
+  background-color: #2cba6c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#buyOne img {
+  margin-right: 15px;
+}
+
+/* Kolom 3 */
+
+.columnThree {
+  text-align: center;
+}
+
+.columnThree .packageTwo {
+  font-size: 40px;
+}
+
+.packagePriceTwo {
+  font-size: 50px;
+  padding-top: 0;
+}
+
+.columnThree ul hr {
+  border-bottom: #8d99ae;
+  width: 90px;
+  /* margin: 0 auto; */
+  opacity: 0.7px;
+  width: 190px;
+}
+
+/* Bagian kolom 3 daftar paket */
+.horizontal-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.horizontal-list li {
+  margin-right: 10px;
+}
+
+#buyTwo {
+  display: flex;
+  align-items: center;
+  background-color: #2cba6c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#buyTwo img {
+  margin-right: 15px;
+}
+
+/* Kolom 4 */
+
+.columnFour {
+  text-align: center;
+}
+
+.columnFour .packageThree {
+  font-size: 40px;
+}
+
+.packagePriceThree {
+  font-size: 50px;
+  padding-top: 0;
+}
+
+.columnFour ul hr {
+  border-bottom: #8d99ae;
+  width: 90px;
+  /* margin: 0 auto; */
+  opacity: 0.7px;
+  width: 190px;
+}
+
+/* Bagian kolom 3 daftar paket */
+.horizontal-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.horizontal-list li {
+  margin-right: 10px;
+}
+
+#buyThree {
+  display: flex;
+  align-items: center;
+  background-color: #2cba6c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#buyThree img {
+  margin-right: 15px;
+}
+/* bagian button cart shop   */
+
+#buyOne .iconsCartShop,
+#buyTwo .iconsCartShop,
+#buyThree .iconsCartShop {
+  margin-right: 10px; /* Sesuaikan jarak antara ikon dan teks sesuai kebutuhan */
+}
+
+/* Tambahkan flexbox ke setiap kolom */
+.columnTwo .column-content,
+.columnThree .column-content,
+.columnFour .column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Atur lebar kolom agar sesuai dengan kontennya */
+.columnTwo .column-content,
+.columnThree .column-content,
+.columnFour .column-content {
+  width: 100%; /* Kolom akan mengambil 100% lebar kontainernya */
+}
+
+/* Tengahkan tombol di dalam kolom */
+#buyOne,
+#buyTwo,
+#buyThree {
+  margin-top: 20px; /* Sesuaikan jarak atas tombol dengan konten di dalam kolom */
+}

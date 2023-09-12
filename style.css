@@ -1,0 +1,343 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.contactMoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c21;
+}
+
+.left-info .phoneNumber {
+  color: blue;
+}
+
+.contact-info .moto {
+  color: #ffff;
+  padding-right: 10px;
+}
+
+.left-info img {
+  padding-right: 7px;
+}
+
+.left-info a {
+  color: white;
+  padding-right: 10px;
+}
+
+.contactMoto .moto {
+  padding-left: 175px;
+}
+
+.socialMediaIcons {
+  padding-right: 110px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.left-info {
+  display: flex;
+  align-items: center;
+  padding-right: 20px; /* Tambahkan margin antara info kontak dan ikon sosial media */
+}
+
+/* Gantilah atribut src dengan URL gambar yang sesuai */
+.phone,
+.gmail {
+  width: 20px; /* Atur lebar ikon sesuai kebutuhan */
+  height: 20px; /* Atur tinggi ikon sesuai kebutuhan */
+}
+
+/* Gantilah warna teks sesuai kebutuhan */
+.moto,
+.phoneNumber,
+.gmail-name {
+  color: black;
+}
+
+/* Gantilah warna latar belakang dan ukuran ikon sesuai kebutuhan */
+.social-media-icons img {
+  width: 30px; /* Atur lebar ikon sosial media sesuai kebutuhan */
+  height: 30px; /* Atur tinggi ikon sosial media sesuai kebutuhan */
+  padding-right: 5px;
+}
+
+/* Bagian Section pada class features */
+.features {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 50px;
+}
+
+.logo-content {
+  width: 70px; /* Atur lebar gambar sesuai kebutuhan */
+  height: auto; /* Atur tinggi gambar sesuai kebutuhan */
+  margin-right: 10px; /* Tambahkan margin antara gambar dan daftar */
+}
+
+.features ul {
+  list-style-type: none; /* Hilangkan bullet points pada daftar */
+  display: flex; /* Tampilkan daftar secara horizontal */
+  margin: 0;
+  padding: 0;
+  gap: 45px;
+  color: #8d99ae;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features li {
+  font-size: 17px; /* Atur ukuran font untuk teks di dalam daftar */
+  margin-right: 15px; /* Tambahkan margin antara elemen daftar */
+  cursor: pointer; /* Ganti kursor menjadi pointer untuk menunjukkan tindakan dapat di-klik */
+  font-weight: bold;
+}
+
+#call {
+  width: 75px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #2cba6c;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#buttonCall {
+  padding-top: 12px;
+}
+
+#menuList {
+  font-size: medium;
+}
+
+/* Menetapkan warna teks tautan menjadi abu-abu */
+#menuList li a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: #6c757d; /* Warna teks tautan */
+}
+
+/* Mengubah warna tautan menjadi biru tua saat kursor diarahkan */
+#menuList li a:hover {
+  color: #0000ff; /* Warna teks tautan saat dihover (biru tua) */
+}
+
+/* Bagian section content */
+#content-abys {
+  width: 100%;
+  text-align: center;
+}
+
+.promotionOne {
+  font-size: 35px;
+  margin: 0;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.promotionTwo {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 100px;
+  color: #8d99ae;
+}
+
+.background-img {
+  width: 100%;
+  height: 620px;
+}
+
+/* Bagian section card box */
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  flex-basis: calc(25% - 40px); /* Lebar 25% dari container dengan margin di antara */
+  text-align: center;
+  height: 310px;
+  width: 130px;
+  border: none;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  border-top: solid 5px #8d99ae;
+  border-bottom: solid 5px #8d99ae;
+}
+
+.service-logo {
+  width: 100px; /* Atur lebar logo sesuai kebutuhan */
+  height: 100px; /* Atur tinggi logo sesuai kebutuhan */
+}
+
+.service-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.service-description {
+  font-size: 20px;
+  color: #4c566a;
+}
+
+/* Bagian section feature abys */
+#features-abys {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descFeatures {
+  padding-top: 150px;
+  padding-left: 100px;
+}
+
+#descOneFeatures {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#descTwoFeatures {
+  font-size: 15px;
+  color: #6c757d;
+}
+
+#listDescFeatures {
+  padding-left: 20px;
+}
+
+#listDescFeatures li {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.features-logo {
+  width: 1000px;
+}
+
+/* Bagian section fact-abys */
+
+.abysFact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.factAboutFact {
+  font-size: 35px;
+  font-weight: bold;
+  padding-right: 200px;
+}
+
+/* Bagian konten kegiatan */
+.technitionActivity {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttonActivity {
+  display: flex;
+  justify-content: center; /* Ini akan mengatur tombol di tengah secara horizontal */
+  align-items: center; /* Ini akan mengatur tombol di tengah secara vertikal */
+  margin-top: 20px; /* Tambahkan margin di atas tombol jika perlu */
+}
+
+.technitionActivityMoto {
+  font-size: 20px;
+  color: #4c566a;
+  text-align: center;
+}
+
+.buttonActivity button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f77f00;
+  color: #ffff;
+}
+
+.technitionActivityLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictOne {
+  width: 400px;
+  height: 240px;
+}
+
+/* Bagian ABYS Desc */
+#abysDesc {
+  display: flex;
+  justify-content: space-between; /* Menempatkan kolom dengan jarak seimbang di antara mereka */
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+.kolom {
+  flex: 1; /* Menyesuaikan lebar setiap kolom secara seimbang */
+  padding: 20px;
+  border: none; /* Menambahkan garis tepi ke setiap kolom */
+}
+
+/* Styling tambahan sesuai kebutuhan Anda */
+.kolom h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.kolom p {
+  font-size: 16px;
+  color: #333;
+}
+
+.columnsOne h1 {
+  font-size: 25px;
+}
+
+/* Bagian Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px; /* Atur padding sesuai kebutuhan */
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Atur margin antara ikon-ikon */
+  color: #ffff;
+}
+
+.footer-text {
+  color: #fff; /* Atur warna teks sesuai kebutuhan */
+  font-size: 14px; /* Atur ukuran font sesuai kebutuhan */
+}
