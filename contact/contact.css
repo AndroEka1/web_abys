@@ -1,0 +1,1336 @@
+* html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.contactMoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c21;
+}
+
+.left-info .fa-solid {
+  margin-right: 5px;
+}
+
+.left-info .phoneNumber {
+  color: blue;
+}
+
+.contact-info .moto {
+  color: #ffff;
+  padding-right: 10px;
+}
+
+.left-info img {
+  padding-right: 7px;
+}
+
+.left-info a {
+  color: white;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.left-info a:hover {
+  text-decoration: underline;
+}
+
+.contactMoto .moto {
+  padding-left: 175px;
+}
+
+.socialMediaIcons {
+  padding-right: 110px;
+}
+
+.socialMediaIcons a {
+  text-decoration: none; /* Menghapus underline pada tautan ikon */
+  color: inherit; /* Menyimpan warna teks asli */
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.left-info {
+  display: flex;
+  align-items: center;
+  padding-right: 20px; /* Tambahkan margin antara info kontak dan ikon sosial media */
+}
+
+/* Gantilah atribut src dengan URL gambar yang sesuai */
+.phone,
+.gmail {
+  width: 20px; /* Atur lebar ikon sesuai kebutuhan */
+  height: 20px; /* Atur tinggi ikon sesuai kebutuhan */
+}
+
+/* Gantilah warna teks sesuai kebutuhan */
+.moto,
+.phoneNumber,
+.gmail-name {
+  color: black;
+}
+
+/* Gantilah warna latar belakang dan ukuran ikon sesuai kebutuhan */
+.social-media-icons img {
+  width: 30px; /* Atur lebar ikon sosial media sesuai kebutuhan */
+  height: 30px; /* Atur tinggi ikon sosial media sesuai kebutuhan */
+  padding-right: 5px;
+}
+
+/* Bagian Section pada class features */
+
+.features-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 200px;
+  padding-right: 175px;
+  gap: 20px;
+  /* position: sticky;
+  top: 0; */
+  background-color: #ffffff;
+  /* z-index: 1; */
+}
+
+.features-mobile {
+  display: none;
+}
+
+#menuListMobile {
+  display: none;
+}
+
+.features .logo-content {
+  width: 120px;
+  height: 60px;
+}
+
+.features ul {
+  list-style-type: none; /* Hilangkan bullet points pada daftar */
+  display: flex; /* Tampilkan daftar secara horizontal */
+  margin: 0;
+  padding: 0;
+  gap: 45px;
+  color: #8d99ae;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features li {
+  font-size: 17px; /* Atur ukuran font untuk teks di dalam daftar */
+  margin-right: 15px; /* Tambahkan margin antara elemen daftar */
+  cursor: pointer; /* Ganti kursor menjadi pointer untuk menunjukkan tindakan dapat di-klik */
+  font-weight: bold;
+}
+
+#call {
+  width: 75px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #2cba6c;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#buttonCall {
+  padding-top: 7px;
+}
+
+#menuList {
+  font-size: medium;
+  margin-left: 20px;
+}
+
+/* Menetapkan warna teks tautan menjadi abu-abu */
+#menuList li a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: #6c757d; /* Warna teks tautan */
+}
+
+/* Mengubah warna tautan menjadi biru tua saat kursor diarahkan */
+#menuList li a:hover {
+  color: #0000ff; /* Warna teks tautan saat dihover (biru tua) */
+}
+
+/* CSS untuk styling pop up ketika li activity dan career di klik */
+/* Gaya CSS untuk pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Akhir styling pop up ketika li activity dan career di klik */
+
+/* Bagian konten */
+
+.promotionImageWeb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.promotionImageWeb img {
+  width: 100%;
+  height: 340px;
+}
+
+.promotionImageMobile {
+  display: none;
+}
+
+/* Styling bagian kontak dan lokasi */
+
+/* CSS Flexbox */
+.contactAndLocationWeb {
+  display: flex;
+  justify-content: space-between; /* Mengatur jarak antara dua kolom */
+  margin-top: 40px;
+  flex-wrap: wrap; /* Memungkinkan baris baru jika kontennya tidak cukup */
+}
+
+.contactAndLocationMobile {
+  display: none;
+}
+
+.columnContactAndLocationWeb {
+  width: 100%; /* Pastikan elemen ini mengambil seluruh lebar section */
+  display: flex;
+  flex-wrap: wrap; /* Memungkinkan baris baru jika kontennya tidak cukup */
+}
+
+.columnContactAndLocationMobile {
+  display: none;
+}
+
+.columnContactWeb {
+  font-size: 15px;
+  flex-basis: 25%; /* Menetapkan kolom kiri menjadi sekitar 40% dari lebar */
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 20px;
+  margin-left: 40px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.columnContactMobile {
+  display: none;
+}
+
+.columnContactWeb h2 {
+  font-size: 17px;
+  text-align: left;
+}
+
+.columnContactWeb h1 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.columnContactInfoWeb {
+  margin-left: 10px;
+}
+
+.columnContactWeb .columnContactInfoWeb h3 {
+  color: #8d99ae;
+  font-size: 15px;
+  text-align: left;
+  margin-right: 90px;
+  /* border: 9px solid blue; */
+}
+
+.map {
+  /* Menetapkan kolom kanan menjadi sekitar 60% dari lebar */
+  flex-basis: 62%;
+  height: 430px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+/* Bagian styling contact */
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+/* 
+.contactInfo > div {
+  flex-basis: 33%; 
+} */
+
+.contactInfo i {
+  margin-right: 10px;
+}
+
+.contactInfo h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contactPhone,
+.contactEmail {
+  display: flex;
+  margin-left: 20px;
+}
+
+.contactPhone h3,
+.contactEmail h3 {
+  margin-left: 8px;
+}
+
+.contactEmail h3 a {
+  text-decoration: none;
+}
+
+.contactPhone .fa-solid {
+  margin-top: 20px;
+}
+
+.contactPhone a {
+  margin-left: 7px;
+  text-decoration: none;
+}
+
+.contactEmail .fa-solid {
+  margin-top: 25px;
+}
+.contactWhatsapp {
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
+.contactWhatsapp a {
+  margin-left: 5px;
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.contactPhone a:hover,
+.contactEmail a:hover,
+.contactWhatsapp a:hover {
+  text-decoration: underline;
+}
+
+/* Bagian hotline */
+
+.hotlineContactWeb {
+  display: flex;
+  margin-left: 150px;
+  color: blue;
+}
+
+.hotlineContactMobile {
+  display: none;
+}
+
+.hotlineContactWeb h2 {
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 250px;
+}
+
+.hotlineContactWeb h4 {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 37px;
+}
+
+/* Bagian faq */
+.faq {
+  display: flex;
+}
+.faqIconWeb {
+  display: flex;
+  flex-basis: 30%;
+}
+
+.faqIconMobile {
+  display: none;
+}
+
+/* Bagian img faq (iconsQuestion) */
+/* .iconsQuestion {
+} */
+
+.iconsQuestion img {
+  width: 70px;
+  height: auto;
+  margin-left: 150px;
+}
+
+/* Bagian list faq (listFaq) */
+.listFaqWeb {
+  flex-basis: 70%;
+  margin-right: 160px;
+}
+
+.listFaqMobile {
+  display: none;
+}
+
+.faq-list {
+  list-style-type: none;
+  /* border: 1px solid green; */
+}
+
+/* Sembunyikan jawaban awalnya */
+.faq-list li .answer {
+  display: none;
+  /* transition: max-height 0.2s ease; */
+  overflow: hidden;
+  max-height: 0;
+  margin-top: 0;
+  max-width: 736px;
+}
+
+/* Gaya untuk judul pertanyaan */
+.faq-list li .question {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligment elemen sejajar dengan center */
+  /* border: 1px solid green; */
+}
+
+/* Gaya untuk judul FAQ */
+.faq-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+}
+
+/* Tampilkan jawaban saat diaktifkan */
+.faq-list li.active .answer {
+  display: block;
+  max-height: 200px; /* Atur ketinggian maksimum sesuai kebutuhan Anda */
+  margin-top: 5px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.question i {
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+
+.question span {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f5f5f5; /* Warna latar belakang angka */
+  color: black; /* Warna teks angka */
+  margin-right: 10px; /* Jarak antara angka dan teks pertanyaan */
+  font-size: 16px;
+  font-weight: bold; /* Atur ketebalan teks angka */ /* Membuat sudut bulat pada angka */
+  border-right: 1px solid rgba(141, 153, 174, 0.4);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  flex-shrink: 20px;
+}
+
+.question span:last-child {
+  margin-right: 0;
+}
+
+.questionText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.questionText h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  margin: 0;
+}
+.faq-list li.active .questionText h3 {
+  font-weight: bold; /* Atur tebal teks saat aktif */
+  margin-top: 10px;
+}
+
+.questionText .answer {
+  color: #8d99ae;
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* bagian send message */
+.sendMassageWeb {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 150px;
+}
+
+.sendMassageMobile {
+  display: none;
+}
+
+.sendMassageWeb label {
+  font-weight: bold;
+}
+
+.sendMassageWeb span {
+  color: red;
+}
+
+.sendMessageWeb .form-group {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8d99ae;
+}
+
+.sendMessageWeb h2 {
+  font-size: 40px;
+}
+
+.sendMessageWeb span {
+  color: red;
+  margin-left: 2px;
+}
+.formMessage button {
+  width: 100px;
+  height: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group #firstName,
+.form-group #lastName {
+  width: 300px;
+  height: 35px;
+}
+
+/* Ubah ukuran teks input menjadi 15px saat fokus */
+.form-group input:focus,
+.form-group textarea:focus {
+  font-size: 15px;
+}
+
+.name-inputs {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.name-inputs p {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.form-group #email,
+.form-group #phone {
+  width: 616px;
+  height: 35px;
+}
+
+.form-group #message {
+  width: 900px;
+  height: 100px;
+}
+
+/* Ubah ukuran teks pada placeholder menjadi 15px */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  font-size: 15px;
+}
+
+/* 
+.sendMessage input,
+.sendMessage textarea {
+  width: 300px;
+  height: 35px;
+} */
+
+/* Bagian ABYS Desc */
+#abysDesc {
+  display: flex;
+  justify-content: space-between; /* Menempatkan kolom dengan jarak seimbang di antara mereka */
+  padding-left: 115px;
+  padding-right: 115px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+#abysDescMobile {
+  display: none;
+}
+
+#abysDesc p {
+  color: #8d99ae;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.kolom {
+  flex: 1; /* Menyesuaikan lebar setiap kolom secara seimbang */
+  padding: 20px;
+  border: none; /* Menambahkan garis tepi ke setiap kolom */
+}
+
+/* Styling tambahan sesuai kebutuhan Anda */
+.kolom h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.kolom p {
+  font-size: 16px;
+  color: #333;
+}
+
+.columnsOne h1 {
+  font-size: 25px;
+}
+
+.columnsOne .aboutUsIcon a {
+  text-decoration: none; /* Menghapus underline pada tautan ikon */
+  color: inherit; /* Menyimpan warna teks asli */
+  margin-right: 10px;
+}
+
+.columnsThree h1 {
+  margin-bottom: 0;
+}
+
+.contactMarketing img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.contactMarketing {
+  display: flex;
+}
+
+.contactLink {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.contactLink p {
+  margin: 2px 0;
+}
+
+.contactLink a {
+  color: #8d99ae;
+  text-decoration: none;
+}
+
+.contactLink a:hover {
+  color: blue;
+}
+
+/* Bagian Footer */
+
+.footerWeb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5e4e2;
+  /* padding: 5px 10px; */
+}
+
+.footerMobile {
+  display: none;
+}
+
+.footer-icons {
+  margin-right: 140px;
+}
+
+.footer-icons a {
+  text-decoration: none; /* Menghapus underline pada tautan ikon */
+  color: inherit; /* Menyimpan warna teks asli */
+  margin-right: 0; /* Memberikan gap 5px antara ikon-ikon */
+}
+
+.footer-icons i {
+  width: 19px;
+  height: 30px;
+  color: blue;
+}
+
+.footer-text {
+  color: #1c1c21; /* Atur warna teks sesuai kebutuhan */
+  font-size: 14px; /* Atur ukuran font sesuai kebutuhan */
+  margin-left: 117px;
+}
+
+/* Bagian setting web */
+@media screen and (max-width: 960px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .navigation {
+    display: none;
+  }
+
+  .menuBars #menuListMobile {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 190px;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s; /* Tambahkan efek transisi */
+    display: none;
+    text-align: center;
+  }
+
+  .menuBars #menuListMobile li {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(141, 153, 174, 0.2);
+  }
+
+  #menuListMobile li:hover {
+    background-color: #ced4da;
+  }
+
+  #menuListMobile li a:hover {
+    color: #4c566a;
+  }
+
+  /* Tambahkan margin ke bawah untuk setiap elemen <li> */
+  #menuListMobile li a {
+    width: 100%;
+    height: 100%;
+    /* margin: 20px; */
+    padding: 10px;
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8d99ae;
+  }
+
+  #menuListMobile.active {
+    right: 0;
+    display: block;
+  }
+
+  #menuListMobile img {
+    width: 100px;
+    height: 200px;
+  }
+
+  .xIconMenu {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  #buttonCallMobile {
+    margin-top: 2px;
+  }
+
+  #buttonCallMobile #callMobile {
+    height: 45px;
+    border-radius: 1px;
+    background-color: #2cba6c;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  #buttonCallMobile #call:hover {
+    background-color: #29ab87; /* Ganti warna latar belakang saat hover */
+    color: #fff; /* Ganti warna teks saat hover */
+  }
+
+  .iconsMenuBars a {
+    text-decoration: none; /* Menghapus underline pada tautan ikon */
+    margin-right: 0;
+    margin: 5px;
+  }
+
+  .iconsMenuBars i {
+    margin-top: 10px;
+  }
+
+  /* Tampilkan social media icons di versi mobile */
+  .socialMediaIcons {
+    display: block;
+  }
+
+  /* Kode untuk bagian features */
+
+  .features {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .features-web {
+    display: none;
+  }
+
+  .features-mobile {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    background-color: #ffffff;
+    /* height: 10px; */
+    /* /* padding-top: 15px; */
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    /* position: sticky;
+    top: 0; */
+    /* margin: 0; */
+    /* z-index: 1000; */
+    /* position: sticky;
+    top: 0;
+    z-index: 2; */
+  }
+
+  .navigationMobile {
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+    /* height: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 8px;
+    /* padding-bottom: 8px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* position: sticky;
+    top: 0;
+    z-index: 2; */
+
+    /* border: 1px solid blue; */
+  }
+
+  .navigationMobile .logo-contentMobile {
+    width: 70px;
+    height: 30px;
+    /* Tambahkan gaya tambahan jika diperlukan */
+  }
+
+  .menu-strip-3 {
+    display: flex;
+    text-align: right;
+    /* margin-left: 200px; */
+  }
+
+  .menu-strip-3 i {
+    /* margin-right: 5px; */
+    font-size: 24px;
+    color: #111212;
+    cursor: pointer;
+  }
+
+  /* Gaya untuk daftar menu */
+  .menu-strip-3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    /* right: -200px; */
+    /* width: 200px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+    display: none;
+  }
+
+  .menu-strip-3 ul li {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .menu-strip-3 ul li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Akhir bagian features */
+
+  /* Bagian promotion image */
+  .promotionImageWeb {
+    display: none;
+  }
+
+  .promotionImageMobile {
+    display: flex;
+  }
+
+  .promotionImageMobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Akhir Bagian promotion image */
+
+  /* Bagian contact and location */
+  .contactAndLocationWeb {
+    display: none;
+  }
+
+  .columnContactAndLocationWeb {
+    display: none;
+  }
+
+  .columnContactWeb {
+    display: none;
+  }
+
+  .contactAndLocationMobile {
+    display: flex;
+  }
+
+  .columnContactAndLocationMobile {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+  }
+
+  .columnContactMobile {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /* border: 1px solid red; */
+    background-color: #ced4da;
+    opacity: 1;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    /* border: 1px solid blue; */
+  }
+
+  .columnContactInfoWeb {
+    display: none;
+  }
+
+  .columnContactInfoMobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .columnContactInfoMobile h2 {
+    font-size: 16px;
+  }
+
+  .columnContactInfoMobile h1 {
+    font-size: 16px;
+  }
+
+  .columnContactInfoMobile h3 {
+    font-size: 15px;
+    color: #8d99ae;
+    opacity: 1px;
+  }
+
+  .columnContactInfoOfficeMobile .contactInfo h3 {
+    font-size: 15px;
+    color: #4c566a;
+    cursor: pointer;
+  }
+  /* Akhir Bagian contact and location */
+
+  /* Bagian hotline */
+  .hotlineContactWeb {
+    display: none;
+  }
+
+  .hotlineContactMobile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+  }
+
+  .hotlineContactMobile h4 {
+    margin-bottom: 10px;
+  }
+
+  .hotlineContactMobile h2 {
+    margin-top: 10px;
+  }
+
+  /* Akhir Bagian hotline */
+
+  /* Bagian faq */
+  /* .faq {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .faqIcon {
+    flex-basis: 20px;
+  }
+  .faqIconWeb {
+    display: none;
+  }
+
+  .faqIconMobile {
+    display: flex;
+  }
+
+  .faqIconMobile .iconsQuestion img {
+    width: 40px;
+  }
+
+  .faq .listFaq {
+    flex-basis: 80px;
+  }
+
+  /* Bagian list faq */
+
+  .listFaqWeb {
+    display: none;
+  }
+  .listFaqMobile {
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .faq-titleMobile {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+
+  .faq-listMobile {
+    list-style-type: none;
+    margin-right: 20px;
+    /* margin-left: 10px; */
+    /* border: 1px solid black; */
+  }
+
+  .questionMobile {
+    display: flex;
+    /* border: 1px solid blue; */
+  }
+
+  /* .answerMobile {
+    border: 1px solid green;
+  } */
+
+  .questionMobile span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    /* text-align: center; */
+    line-height: 0px;
+    background-color: blue; /* Warna latar belakang angka */
+    color: black; /* Warna teks angka */
+    margin-right: 10px; /* Jarak antara angka dan teks pertanyaan */
+    font-size: 15px;
+    font-weight: bold; /* Atur ketebalan teks angka */ /* Membuat sudut bulat pada angka */
+    border-right: 1px solid rgba(141, 153, 174, 0.4);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    flex-shrink: 0;
+  }
+
+  .questionMobile span:last-child {
+    margin-right: 0;
+  }
+
+  .questionMobile .questionText h3 {
+    font-size: 12px;
+    margin-top: 17px;
+  }
+
+  .questionMobile i {
+    margin-top: 20px;
+
+    /* margin-bottom: 15px; */
+    /* margin-left: auto; */
+  }
+
+  .questionMobile .questionText .answerMobile {
+    color: #8d99ae;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 12px;
+  }
+
+  .questionMobile .faq-list li .answerMobile {
+    display: none;
+    /* transition: max-height 0.2s ease; */
+    overflow: hidden;
+    max-height: 0;
+    margin-top: 0;
+    max-width: 736px;
+  }
+
+  .questionMobile .faq-list li.active .answerMobile {
+    display: block;
+    max-height: 200px; /* Atur ketinggian maksimum sesuai kebutuhan Anda */
+    margin-top: 5px;
+  }
+
+  /* .questionAndAnswerMobile {
+    margin: 0;
+    border: 1px solid blue;
+  } */
+
+  /* Akhir Bagian list faq */
+  /* Akhir Bagian faq */
+
+  /* bagian Send Massage */
+  .sendMassageWeb {
+    display: none;
+  }
+
+  .sendMassageMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sendMassageMobile h2 {
+    margin-left: 20px;
+  }
+
+  .formMessageMobile {
+    margin-left: 20px;
+  }
+
+  .formMessageMobile span {
+    color: red;
+  }
+
+  .form-groupMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nameMobile {
+    font-weight: bold;
+  }
+
+  .nameMobile span {
+    color: red;
+    font-size: 15px;
+  }
+
+  .name-inputsMobile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .name-inputsMobile p {
+    color: #8d99ae;
+    font-size: 13px;
+    margin-top: 0;
+  }
+
+  #firstNameMobile,
+  #lastNameMobile {
+    width: 156.5px;
+    margin-top: 5px;
+  }
+
+  #firstNameMobile,
+  #lastNameMobile,
+  #emailMobile,
+  #phoneMobile {
+    height: 25px;
+  }
+
+  #emailMobile,
+  #phoneMobile,
+  #messageMobile {
+    width: 330px;
+    margin-bottom: 10px;
+  }
+
+  #messageMobile {
+    height: 50px;
+  }
+
+  .formMessageMobile button {
+    width: 70px;
+  }
+
+  /* Akhir bagian Send Massage */
+
+  /* Bagian abysDesc */
+  #abysDesc {
+    display: none;
+  }
+
+  #abysDescMobile {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  /* Kolom pertama */
+  .columnsOneMobile,
+  .columnsTwoMobile,
+  .columnsThreeMobile {
+    flex: 1;
+    padding: 5px;
+    text-align: left; /* Ubah menjadi "left" agar teks rata kiri */
+  }
+
+  .columnsOneMobile h1,
+  .columnsTwoMobile h1,
+  .columnsThreeMobile h1 {
+    font-size: 14px; /* Ukuran font yang sama untuk semua kolom */
+  }
+
+  /* Kolom ketiga */
+  .columnsThreeMobile h1 {
+    margin-bottom: 0;
+  }
+
+  .columnsOneMobile p,
+  .columnsTwoMobile p {
+    font-size: 12px;
+    color: #8d99ae;
+  }
+
+  .columnsThreeMobile .contactMarketing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .columnsThreeMobile .contactMarketing img {
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
+  }
+  .columnsThreeMobile .contactMarketing h4 {
+    font-size: 14px;
+  }
+
+  .columnsThreeMobile .contactMarketing p {
+    font-size: 12px;
+  }
+  /* Akhir Bagian abysDesc */
+
+  /* Bagian footer */
+  .footerWeb {
+    display: none;
+  }
+
+  .footerMobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 0;
+    color: #8d99ae;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+  }
+
+  .footer-textMobile {
+    font-size: 13px;
+  }
+
+  .footer-iconsMobile a {
+    text-decoration: none; /* Menghapus underline pada tautan ikon */
+    color: inherit; /* Menyimpan warna teks asli */
+    margin-right: 0;
+    margin: 5px;
+  }
+}

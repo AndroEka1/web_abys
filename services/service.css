@@ -3,11 +3,20 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
+.navigation-mobile {
+  display: none;
+}
+
 .contactMoto {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1c1c21;
+}
+
+.left-info .fa-solid {
+  margin-right: 5px;
 }
 
 .left-info .phoneNumber {
@@ -26,6 +35,11 @@ body {
 .left-info a {
   color: white;
   padding-right: 10px;
+  text-decoration: none;
+}
+
+.left-info a:hover {
+  text-decoration: underline;
 }
 
 .contactMoto .moto {
@@ -34,6 +48,12 @@ body {
 
 .socialMediaIcons {
   padding-right: 110px;
+}
+
+.socialMediaIcons a {
+  text-decoration: none; /* Menghapus underline pada tautan ikon */
+  color: inherit; /* Menyimpan warna teks asli */
+  margin-right: 10px;
 }
 
 .contact-info {
@@ -73,16 +93,39 @@ body {
 
 /* Bagian Section pada class features */
 .features {
+  top: 0;
+  position: sticky;
+  width: 100%;
+}
+.features-web {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0;
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
 }
 
-.logo-content {
-  width: 70px; /* Atur lebar gambar sesuai kebutuhan */
-  height: auto; /* Atur tinggi gambar sesuai kebutuhan */
-  margin-right: 10px; /* Tambahkan margin antara gambar dan daftar */
+.features-mobile {
+  display: none;
+}
+
+#menuListMobile {
+  display: none;
+}
+
+.features-web .logo-content {
+  width: 120px;
+  height: 60px;
 }
 
 .features ul {
@@ -90,9 +133,8 @@ body {
   display: flex; /* Tampilkan daftar secara horizontal */
   margin: 0;
   padding: 0;
-  gap: 45px;
+  gap: 55px;
   color: #8d99ae;
-
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -100,7 +142,6 @@ body {
 
 .features li {
   font-size: 17px; /* Atur ukuran font untuk teks di dalam daftar */
-  margin-right: 15px; /* Tambahkan margin antara elemen daftar */
   cursor: pointer; /* Ganti kursor menjadi pointer untuk menunjukkan tindakan dapat di-klik */
   font-weight: bold;
 }
@@ -119,12 +160,17 @@ body {
 }
 
 #buttonCall {
-  padding-top: 12px;
+  padding-top: 7px;
 }
 
 #menuList {
   font-size: medium;
+  margin-left: 20px;
 }
+/* #menuList li {
+  margin: 0;
+  padding: 0;
+} */
 
 /* Menetapkan warna teks tautan menjadi abu-abu */
 #menuList li a {
@@ -137,13 +183,55 @@ body {
   color: #0000ff; /* Warna teks tautan saat dihover (biru tua) */
 }
 
+/* CSS untuk styling pop up ketika li activity dan career di klik */
+/* Gaya CSS untuk pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Akhir styling pop up ketika li activity dan career di klik */
+
+/* bagian konten */
+
+.contentMobile {
+  display: none;
+}
 .promotionContent {
-  margin-top: 100px;
+  margin-top: 40px;
+  margin-bottom: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.promotionContentMobile {
+  display: none;
 }
 
 .PromotionImage p {
@@ -163,6 +251,8 @@ body {
 .promotionImageTwo {
   display: block;
   margin: 0 auto;
+  width: 900px;
+  height: 240px;
 }
 
 /* Bagian konten */
@@ -172,8 +262,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom dengan lebar yang sama */
   gap: 10px; /* Jarak antar kolom */
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 140px;
+  margin-right: 140px;
   margin-top: 150px;
 }
 
@@ -190,11 +280,20 @@ body {
 }
 
 .columnOne {
-  background-color: lightblue;
+  background-color: #ef233c;
+}
+
+.columnOne h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 
 .columnOne img {
-  width: 400px;
+  width: 300px;
+  margin-top: 20px;
 }
 
 .listPackageInternet {
@@ -203,6 +302,7 @@ body {
 
 .columnTwo {
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 .columnTwo .packageOne {
@@ -214,7 +314,8 @@ body {
 .packagePriceThree {
   font-size: 50px;
   padding-top: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid red;
+  color: #ef233c;
 }
 
 .columnTwo ul hr {
@@ -251,10 +352,11 @@ body {
   background-color: #2cba6c;
   color: #fff;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #buyOne img {
@@ -265,6 +367,7 @@ body {
 
 .columnThree {
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 .columnThree .packageTwo {
@@ -295,7 +398,7 @@ body {
 }
 
 .horizontal-list li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 #buyTwo {
@@ -304,20 +407,17 @@ body {
   background-color: #2cba6c;
   color: #fff;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-#buyTwo img {
-  margin-right: 15px;
 }
 
 /* Kolom 4 */
 
 .columnFour {
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 .columnFour .packageThree {
@@ -347,17 +447,13 @@ body {
   padding: 0;
 }
 
-.horizontal-list li {
-  margin-right: 10px;
-}
-
 #buyThree {
   display: flex;
   align-items: center;
   background-color: #2cba6c;
   color: #fff;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -384,6 +480,13 @@ body {
   justify-content: center;
   text-align: center;
 }
+.columnOne,
+.columnTwo,
+.columnThree,
+.columnFour {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
 /* Atur lebar kolom agar sesuai dengan kontennya */
 .columnTwo .column-content,
@@ -392,9 +495,1128 @@ body {
   width: 100%; /* Kolom akan mengambil 100% lebar kontainernya */
 }
 
+.columnTwo a,
+.columnThree a,
+.columnFour a {
+  text-decoration: none;
+}
+
 /* Tengahkan tombol di dalam kolom */
 #buyOne,
 #buyTwo,
 #buyThree {
-  margin-top: 20px; /* Sesuaikan jarak atas tombol dengan konten di dalam kolom */
+  margin-top: 10px; /* Sesuaikan jarak atas tombol dengan konten di dalam kolom */
+  margin-bottom: 15px;
+}
+
+.column-content .horizontal-list li {
+  font-size: 20px;
+}
+
+.columnTwo .column-content .recomendationDevices,
+.columnThree .column-content .recomendationDevices,
+.columnFour .column-content .recomendationDevices {
+  color: #8d99ae;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+/* Bagian ABYS Goal */
+.abysGoal {
+  margin-top: 90px;
+  margin-bottom: 80px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.abysGoalMobile {
+  display: none;
+}
+
+.abysGoal .abysGoalPlan p {
+  font-size: 17.5px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Styling untuk Internet Network in ABYS */
+.internetNetworkInAbys {
+  margin-top: 60px;
+  margin-left: 140px;
+  margin-right: 140px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.internetNetworkInAbysMobile {
+  display: none;
+}
+
+.NetworkingInAbys {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  margin: 10px;
+  text-align: start;
+}
+
+.NetworkingInAbys h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Sesuaikan warna teks dengan preferensi Anda */
+}
+
+.NetworkingInAbys p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #666; /* Sesuaikan warna teks dengan preferensi Anda */
+}
+
+.internetNetworkInAbys img {
+  width: 350px;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.menuBarsDropDown {
+  display: none;
+}
+
+.menuBarsDropDown.active {
+  display: block;
+}
+
+/* Styling untuk ABYS Home Internet */
+.abysHomeInternet {
+  margin-top: 60px;
+  margin-left: 120px;
+  margin-right: 120px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Mengatur jarak antar kolom */
+  font-family: "Roboto", sans-serif;
+}
+
+.abysHomeInternetMobile {
+  display: none;
+}
+
+.abysHomeColumnOne,
+.abysHomeColumnTwo,
+.abysHomeColumnThree,
+.abysHomeColumnFour,
+.abysHomeColumnFive,
+.abysHomeColumnSix {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  background-color: #f0f0f0; /* Sesuaikan warna latar belakang sesuai kebutuhan */
+  margin: 3px;
+  text-align: start;
+  border-radius: 5px;
+}
+
+.abysHomeColumn h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Sesuaikan warna teks dengan preferensi Anda */
+}
+
+.abysHomeColumnOne img {
+  width: 150px;
+  height: auto;
+  margin-top: 145px;
+  padding-left: 5px;
+}
+
+.abysHomeColumnOne h2 {
+  text-align: center;
+}
+
+.abysHomeColumn img {
+  width: 350px;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.abysHomeColumnOne {
+  height: 550px;
+  background-color: #ef233c;
+}
+
+.abysHomeColumnTwo,
+.abysHomeColumnThree,
+.abysHomeColumnFour,
+.abysHomeColumnFive {
+  height: 450px;
+}
+
+.abysHomeColumnSix {
+  height: 610px;
+  background-color: #ef233c;
+}
+
+.textInfoSix {
+  margin-top: 70px;
+}
+.abysHomeColumnSix h4 {
+  font-size: 20px;
+  text-align: center;
+
+  /*
+  margin-left: 15px;
+  margin-right: 15px; */
+}
+
+.abysHomeColumnSix h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.internetChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  margin-top: 1px;
+}
+
+.internetChoice h1 {
+  font-size: 60px;
+}
+
+.internetChoice h3 {
+  margin-top: 5px;
+}
+
+.packagePrice {
+  text-align: center;
+}
+
+.infoPackage {
+  font-size: 18px;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  color: #8d99ae;
+  text-align: center;
+}
+
+.infoPackage p {
+  border-bottom: 1px solid rgba(141, 153, 174, 0.5);
+}
+
+#buyPackage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buyPackage {
+  display: flex;
+  background-color: #2cba6c;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#buyPackage .iconsInfoPackage {
+  margin-right: 7px;
+}
+
+/* Akhir bagian styling ABYS Home Internet */
+
+/* Bagian ABYS Desc */
+#abysDesc {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Menempatkan kolom dengan jarak seimbang di antara mereka */
+  padding-left: 115px;
+  padding-right: 175px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+#abysDescMobile {
+  display: none;
+}
+
+#abysDesc p {
+  color: #8d99ae;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.columns {
+  flex: 1;
+  padding: 20px;
+  border: none;
+}
+
+/* Styling tambahan sesuai kebutuhan Anda */
+/* .kolom h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.kolom p {
+  font-size: 16px;
+  color: #333;
+} */
+
+.columnsOne h1 {
+  font-size: 25px;
+}
+
+.columnsTwo {
+  width: 350px;
+}
+
+.columnsThree h1 {
+  margin-bottom: 0;
+}
+
+.contactMarketing img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.contactMarketing {
+  display: flex;
+}
+
+.contactLink {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.contactLink p {
+  margin: 2px 0;
+}
+
+.contactLink a {
+  color: #8d99ae;
+  text-decoration: none;
+}
+
+.contactLink a:hover {
+  color: blue;
+}
+
+/* Bagian Footer */
+
+.footerWeb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5e4e2;
+  /* padding: 5px 10px; */
+}
+
+.footerMobile {
+  display: none;
+}
+
+.footer-icons {
+  margin-right: 120px;
+}
+
+.footer-icons a {
+  text-decoration: none; /* Menghapus underline pada tautan ikon */
+  color: inherit; /* Menyimpan warna teks asli */
+  margin-right: 0; /* Memberikan gap 5px antara ikon-ikon */
+}
+
+.footer-icons i {
+  width: 19px;
+  height: 30px;
+  color: blue;
+}
+
+.footer-text {
+  color: #1c1c21; /* Atur warna teks sesuai kebutuhan */
+  font-size: 14px; /* Atur ukuran font sesuai kebutuhan */
+  margin-left: 117px;
+}
+
+/* Bagian media query */
+@media screen and (max-width: 960px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .navigation {
+    display: none;
+  }
+
+  .menuBars #menuListMobile {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 190px;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s; /* Tambahkan efek transisi */
+    display: none;
+    text-align: center;
+  }
+
+  .menuBars #menuListMobile li {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(141, 153, 174, 0.2);
+  }
+
+  #menuListMobile li:hover {
+    background-color: #ced4da;
+  }
+
+  #menuListMobile li a:hover {
+    color: #4c566a;
+  }
+
+  /* Tambahkan margin ke bawah untuk setiap elemen <li> */
+  #menuListMobile li a {
+    width: 100%;
+    height: 100%;
+    /* margin: 20px; */
+    padding: 10px;
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8d99ae;
+  }
+
+  #menuListMobile.active {
+    right: 0;
+    display: block;
+  }
+
+  #menuListMobile img {
+    width: 100px;
+    height: 200px;
+  }
+
+  .xIconMenu {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  #buttonCallMobile {
+    margin-top: 2px;
+  }
+
+  #buttonCallMobile #callMobile {
+    height: 45px;
+    border-radius: 1px;
+    background-color: #2cba6c;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  #buttonCallMobile #call:hover {
+    background-color: #29ab87; /* Ganti warna latar belakang saat hover */
+    color: #fff; /* Ganti warna teks saat hover */
+  }
+
+  .iconsMenuBars a {
+    text-decoration: none; /* Menghapus underline pada tautan ikon */
+    margin-right: 0;
+    margin: 5px;
+  }
+
+  .iconsMenuBars i {
+    margin-top: 10px;
+  }
+
+  /* Tampilkan social media icons di versi mobile */
+  .socialMediaIcons {
+    display: block;
+  }
+
+  /* Kode untuk bagian features */
+
+  .features {
+    top: 0;
+    position: sticky;
+  }
+  .features-web {
+    display: none;
+  }
+
+  .features-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 10px;
+    /* margin-top: 5px;
+    margin-bottom: 10px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border: 1px solid black; */
+  }
+
+  .navigationMobile {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navigationMobile .logo-contentMobile {
+    width: 70px;
+    height: 30px;
+    /* Tambahkan gaya tambahan jika diperlukan */
+  }
+
+  .menu-strip-3 {
+    display: flex;
+    text-align: right;
+    /* margin-left: 200px; */
+  }
+
+  .menu-strip-3 i {
+    /* margin-right: 5px; */
+    font-size: 24px;
+    color: #111212;
+    cursor: pointer;
+  }
+
+  /* Gaya untuk daftar menu */
+  .menu-strip-3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    /* right: -200px; */
+    /* width: 200px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+    display: none;
+  }
+
+  .menu-strip-3 ul li {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .menu-strip-3 ul li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Bagian promotion content */
+  .promotionContent {
+    display: none;
+  }
+
+  .promotionContentMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .promotionContentMobile img {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .promotionContentMobile p {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .promotionContentMobile .promotionImageTwo {
+    width: 350px;
+    height: auto;
+  }
+  /* Akhir Bagian promotion content */
+
+  /* Bagian konten  */
+  .content {
+    display: none;
+  }
+
+  .contentMobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px; /* Jarak antar kolom */
+    margin-top: 120px;
+  }
+  .columnOneMobile {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef233c;
+  }
+
+  .columnOneMobile h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .columnOneMobile img {
+    width: 150px;
+  }
+  .listPackageInternet {
+    text-align: center;
+  }
+  .columnTwoMobile {
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  .columnTwoMobile ul hr {
+    border-bottom: #8d99ae;
+    width: 90px;
+    /* margin: 0 auto; */
+    opacity: 0.7px;
+    width: 190px;
+  }
+  .columnTwoMobile ul hr.lineBreak {
+    width: 120px; /* Mengatur lebar garis pemisah menjadi 120px */
+    margin: 0 auto; /* Pusatkan garis pemisah */
+    opacity: 0.7;
+  }
+
+  /* Bagian kolom li daftar paket */
+  .horizontal-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .horizontal-list li {
+    margin-right: 10px;
+  }
+
+  #buyOne {
+    display: flex;
+    align-items: center;
+    background-color: #2cba6c;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #buyOne img {
+    margin-right: 15px;
+  }
+
+  /* Kolom 3 */
+
+  .columnThreeMobile {
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  /* .packagePriceTwo {
+    font-size: 50px;
+    padding-top: 0;
+  } */
+
+  .columnThreeMobile ul hr {
+    border-bottom: #8d99ae;
+    width: 90px;
+    /* margin: 0 auto; */
+    opacity: 0.7px;
+    width: 190px;
+  }
+
+  /* Bagian kolom 3 daftar paket */
+  .horizontal-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .horizontal-list li {
+    margin-right: 20px;
+  }
+
+  #buyTwo {
+    display: flex;
+    align-items: center;
+    background-color: #2cba6c;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Kolom 4 */
+
+  .columnFourMobile {
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  .packagePriceThree {
+    font-size: 50px;
+    padding-top: 0;
+  }
+
+  .columnFourMobile ul hr {
+    border-bottom: #8d99ae;
+    width: 90px;
+    /* margin: 0 auto; */
+    opacity: 0.7px;
+    width: 190px;
+  }
+
+  /* Bagian kolom 3 daftar paket */
+  .horizontal-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  #buyThree {
+    display: flex;
+    align-items: center;
+    background-color: #2cba6c;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #buyThree img {
+    margin-right: 15px;
+  }
+  /* bagian button cart shop   */
+
+  #buyOne .iconsCartShop,
+  #buyTwo .iconsCartShop,
+  #buyThree .iconsCartShop {
+    margin-right: 10px; /* Sesuaikan jarak antara ikon dan teks sesuai kebutuhan */
+  }
+
+  /* Tambahkan flexbox ke setiap kolom */
+  .columnTwoMobile .column-content,
+  .columnThreeMobile .column-content,
+  .columnFourMobile .column-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 330px;
+  }
+  .columnOneMobile {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .columnTwoMobile,
+  .columnThreeMobile,
+  .columnFourMobile {
+    background-color: #ced4da;
+  }
+
+  .columnTwoMobile a,
+  .columnThreeMobile a,
+  .columnFourMobile a {
+    text-decoration: none;
+  }
+
+  /* Tengahkan tombol di dalam kolom */
+  #buyOne,
+  #buyTwo,
+  #buyThree {
+    margin-top: 20px; /* Sesuaikan jarak atas tombol dengan konten di dalam kolom */
+  }
+
+  .column-content .horizontal-list li {
+    font-size: 20px;
+  }
+
+  .columnTwoMobile .column-content .recomendationDevices,
+  .columnThreeMobile .column-content .recomendationDevices,
+  .columnFourMobile .column-content .recomendationDevices {
+    color: #8d99ae;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .columnTwoMobile .packageOne,
+  .columnThreeMobile .packageTwo,
+  .columnFourMobile .packageThree {
+    font-size: 35px;
+  }
+
+  .columnTwoMobile .desctriptionPackage,
+  .columnThreeMobile .desctriptionPackage,
+  .columnFourMobile .desctriptionPackage {
+    color: #8d99ae;
+  }
+
+  /* Akhir Bagian konten  */
+
+  /* Bagian abys Goal mobile */
+
+  .abysGoal {
+    display: none;
+  }
+
+  .abysGoalMobile {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .abysGoalMobile .abysGoalPlanMobile h2 {
+    font-size: 25px;
+  }
+
+  .abysGoalMobile .abysGoalPlanMobile p {
+    font-size: 19px;
+  }
+
+  /* Akhir Bagian abys Goal mobile */
+
+  /* Bagian network in abys */
+  .internetNetworkInAbys {
+    display: none;
+  }
+
+  .internetNetworkInAbysMobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .internetNetworkInAbysMobile img {
+    width: 330px;
+    height: 250px;
+  }
+
+  .NetworkingInAbysMobile {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+  }
+
+  /* Akhir Bagian network in abys */
+
+  /* Bagian abys home internet */
+  .abysHomeInternet {
+    display: none;
+  }
+
+  .abysHomeInternetMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .abysHomeInternetMobile {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    /* margin-left: 120px; */
+    /* margin-right: 120px; */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Mengatur jarak antar kolom */
+    font-family: "Roboto", sans-serif;
+  }
+
+  .abysHomeColumnOneMobile {
+    margin-left: 2opx;
+    margin-right: 20px;
+  }
+
+  .abysHomeColumnOneMobile img {
+    width: 150px;
+    height: auto;
+  }
+
+  .abysHomeColumnOneMobile,
+  .abysHomeColumnTwoMobile,
+  .abysHomeColumnThreeMobile,
+  .abysHomeColumnFourMobile,
+  .abysHomeColumnFiveMobile,
+  .abysHomeColumnSixMobile {
+    flex: 1;
+    width: 310px;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0; /* Sesuaikan warna latar belakang sesuai kebutuhan */
+    margin: 3px;
+    margin-bottom: 10px;
+    text-align: start;
+    border-radius: 5px;
+  }
+
+  .abysHomeColumn h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Sesuaikan warna teks dengan preferensi Anda */
+  }
+
+  .abysHomeColumn img {
+    width: 350px;
+    height: 300px;
+    border-radius: 2px;
+  }
+
+  .abysHomeColumnOneMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    background-color: #ef233c;
+  }
+
+  .abysHomeColumnTwoMobile,
+  .abysHomeColumnThreeMobile,
+  .abysHomeColumnFourMobile,
+  .abysHomeColumnFiveMobile {
+    height: 350px;
+  }
+
+  .abysHomeColumnTwoMobile .packagePrice,
+  .abysHomeColumnThreeMobile .packagePrice,
+  .abysHomeColumnFourMobile .packagePrice,
+  .abysHomeColumnFiveMobile .packagePrice {
+    color: #ef233c;
+    font-size: 35px;
+  }
+
+  .abysHomeColumnSixMobile {
+    width: 300px;
+    height: 210px;
+    background-color: #ef233c;
+  }
+
+  .textInfoSix {
+    margin-top: 70px;
+  }
+  .abysHomeColumnSixMobile h4 {
+    font-size: 20px;
+    text-align: center;
+
+    /*
+  margin-left: 15px;
+  margin-right: 15px; */
+  }
+
+  .abysHomeColumnSixMobile h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .internetChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-top: 1px;
+  }
+
+  .internetChoice h1 {
+    font-size: 60px;
+  }
+
+  .internetChoice h3 {
+    margin-top: 5px;
+  }
+
+  .packagePrice {
+    text-align: center;
+  }
+
+  .infoPackage {
+    font-size: 18px;
+    /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+    color: #8d99ae;
+    text-align: center;
+  }
+
+  .infoPackage p {
+    border-bottom: 1px solid rgba(141, 153, 174, 0.5);
+  }
+
+  #buyPackage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buyPackage {
+    display: flex;
+    background-color: #2cba6c;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #buyPackage .iconsInfoPackage {
+    margin-right: 7px;
+  }
+
+  /* Akhir Bagian abys home internet */
+
+  /* Bagian abysDesc */
+  #abysDesc {
+    display: none;
+  }
+
+  #abysDescMobile {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  /* Kolom pertama */
+  .columnsOneMobile,
+  .columnsTwoMobile,
+  .columnsThreeMobile {
+    flex: 1;
+    padding: 5px;
+    text-align: left; /* Ubah menjadi "left" agar teks rata kiri */
+  }
+
+  .columnsOneMobile h1,
+  .columnsTwoMobile h1,
+  .columnsThreeMobile h1 {
+    font-size: 14px; /* Ukuran font yang sama untuk semua kolom */
+  }
+
+  /* Kolom ketiga */
+  .columnsThreeMobile h1 {
+    margin-bottom: 0;
+  }
+
+  .columnsOneMobile p,
+  .columnsTwoMobile p {
+    font-size: 12px;
+    color: #8d99ae;
+  }
+
+  .columnsThreeMobile .contactMarketing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .columnsThreeMobile .contactMarketing img {
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
+  }
+  .columnsThreeMobile .contactMarketing h4 {
+    font-size: 14px;
+  }
+
+  .columnsThreeMobile .contactMarketing p {
+    font-size: 12px;
+  }
+  /* Akhir Bagian abysDesc */
+
+  /* Bagian footer */
+  .footerWeb {
+    display: none;
+  }
+
+  .footerMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 0;
+    color: #8d99ae;
+  }
+
+  .footer-iconsMobile a {
+    text-decoration: none; /* Menghapus underline pada tautan ikon */
+    color: inherit; /* Menyimpan warna teks asli */
+    margin-right: 0;
+    margin: 5px;
+  }
 }

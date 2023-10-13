@@ -1,0 +1,196 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha384-Vk4Ay1gd9RtFlNnqvegVf0i0b/n3jS5I6Z+G52B+W+IwVJ9z8H5Ag5R5F/CuEK9Uj" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- BAGIAN NAVIGATION -->
+    <section class="navigation">
+      <nav class="contactMoto">
+        <div class="contact-info">
+          <p class="moto">Better Internet Better Life</p>
+          <div class="left-info">
+            <i class="fa-solid fa-phone" style="color: #f2f2f3"></i>
+            <!-- bagian no telp -->
+            <a href="https://wa.me/6283814112472/?text=Hello">082195125674</a>
+            <i class="fa-solid fa-envelope" style="color: #fcfcfc"></i>
+            <a href="http://">abys@gmail.com</a>
+          </div>
+        </div>
+        <div class="socialMediaIcons">
+          <!-- Ikon WhatsApp -->
+          <a href="https://wa.me/6283814112472/?text=Hello ka, mau nanya harga paket di abys" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="color: #f2f2f3"></i>
+          </a>
+
+          <!-- Ikon Tiktok -->
+          <a href="https://web.facebook.com/andro.eka?eav=AfZWZzQfqXIog8GxRM5OAtlibom6PP25utSXqK_8Z3AnWfbn2Mb-ewtQw9fKi5Jmb5Y&paipv=0&_rdc=1&_rdr" target="_blank">
+            <i class="fa-brands fa-tiktok" style="color: #ffffff"></i>
+          </a>
+
+          <!-- Ikon Instagram -->
+          <a href="https://www.instagram.com/abysnetwork/" target="_blank">
+            <i class="fab fa-instagram" style="color: #f2f2f3"></i>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <!-- AKHIR BAGIAN NAVIGATION -->
+    <section class="features">
+      <img class="logo-content" src="./assets/abysLogo.png" alt="Logo ABYS" />
+      <ul id="menuList">
+        <li><a href="../../home.html">Home</a></li>
+        <li><a href="../../services/service.html">Services</a></li>
+        <li><a href="../../company/company.html">Company</a></li>
+        <li><a href="../../coverage/coverage.html">Coverage</a></li>
+        <li><a href="activity.html">Activity</a></li>
+        <li><a href="../../Promotion/promotion.html">Promotion</a></li>
+        <li><a href="../../contact/contact.html">Contact</a></li>
+        <li><a href="career.html">Career</a></li>
+      </ul>
+      <div id="buttonCall">
+        <button id="call">CALL</button>
+      </div>
+    </section>
+    <!-- Akhir bagian menu list dan nav -->
+
+    <section class="sendSubscripePackage">
+      <h2>Form Pendaftaran</h2>
+      <form class="formMessage" action="mailto:androeka11@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label class="name" for="name"
+            >Nama
+            <span>*</span>
+          </label>
+          <div class="name-inputs">
+            <div>
+              <input type="text" id="firstName" name="firstName" placeholder="Budi" required /><br />
+              <p>First</p>
+            </div>
+            <div>
+              <input type="text" id="lastName" name="lastName" placeholder="Utama" /><br />
+              <p>Last</p>
+            </div>
+          </div>
+        </div>
+        <div class="radio-group">
+          <h3 class="userChoicePackage">Paket ABYS: <span>*</span></h3>
+          <label class="listPackageInternet"> <input type="radio" name="paket" value="5 Mbps" /> 5 Mbps -> 150.000</label>
+          <label class="listPackageInternet"> <input type="radio" name="paket" value="10 Mbps" /> 10 Mbps -> 185.000</label>
+          <label class="listPackageInternet"> <input type="radio" name="paket" value="15 Mbps" /> 15 Mbps -> 220.000</label>
+          <label class="listPackageInternet"> <input type="radio" name="paket" value="20 Mbps" /> 20 Mbps -> 285.000</label>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="abys@gmail.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Nomor Telepon <span>*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="0831-xxxx-xxx" />
+        </div>
+
+        <div class="form-group">
+          <label class="address" for="address">Alamat <span>*</span></label>
+          <input type="tel" id="addressUser" name="address" placeholder="Delta Kondang Indah" />
+        </div>
+
+        <div class="form-group">
+          <div class="inputAddress">
+            <div class="inputCity">
+              <label class="addressCity" for="city">City <span>*</span></label>
+              <input type="address" id="city" name="city" placeholder="Karawang" />
+            </div>
+            <div class="inputState">
+              <label for="state">Kelurahan <span>*</span></label>
+              <input type="address" id="state" name="state" placeholder="Klari" />
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <button id="sendRegister" type="submit">Kirim</button>
+      </form>
+    </section>
+    <script src="https://kit.fontawesome.com/1c6a621bf6.js" crossorigin="anonymous"></script>
+    <!-- Bagian abys desc -->
+    <section id="abysDesc">
+      <!-- Kolom pertama -->
+      <div class="columnsOne">
+        <div>
+          <h1>Cakupan Wilayah ABYS</h1>
+          <p>Karawang Timur, Kosambi, Karawang Barat</p>
+        </div>
+        <div>
+          <!-- Bagian 2 di kolom 1 -->
+          <h1>About us</h1>
+          <p>ABYS, Solusi Internet Terbaik untuk Kehidupan Anda!</p>
+          <div class="aboutUsIcon">
+            <!-- Ikon WhatsApp -->
+            <a href="https://wa.me/6283814112472/?text=Hello" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <!-- Ikon Tiktok -->
+            <a href="https://web.facebook.com/andro.eka?eav=AfZWZzQfqXIog8GxRM5OAtlibom6PP25utSXqK_8Z3AnWfbn2Mb-ewtQw9fKi5Jmb5Y&paipv=0&_rdc=1&_rdr" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <!-- Ikon Instagram -->
+            <a href="https://www.instagram.com/yourpage" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom kedua -->
+      <div class="columnsTwo">
+        <div>
+          <h1>Internet ABYS</h1>
+          <p>Ini adalah kolom kedua dari halaman web.</p>
+        </div>
+      </div>
+
+      <!-- Kolom ketiga -->
+      <div class="columnsThree">
+        <div>
+          <h1>Contact Us</h1>
+          <div class="contactMarketing">
+            <img src="./assets/marketing-modified.png" alt="" />
+            <div class="contactLink">
+              <h4>Marketing Abys</h4>
+              <p><a href="tel:(021)725124">(021)725124</a></p>
+              <p><a href="mailto:abys@gmail.id">marketing@abys.id</a></p>
+              <p><a href="https://wa.me/6283814112472/?text=Hallo ka, saya mau nanya tentang layanan di abys">Chat via Whatsapp</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir bagian abys Desc -->
+    <script src="https://kit.fontawesome.com/1c6a621bf6.js" crossorigin="anonymous"></script>
+  </body>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">Dibuat oleh ABYS Home</p>
+    <div class="footer-icons">
+      <!-- Ikon WhatsApp -->
+      <a href="https://wa.me/6283814112472/?text=Hello" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <!-- Ikon Facebook -->
+      <a href="https://web.facebook.com/andro.eka?eav=AfZWZzQfqXIog8GxRM5OAtlibom6PP25utSXqK_8Z3AnWfbn2Mb-ewtQw9fKi5Jmb5Y&paipv=0&_rdc=1&_rdr" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <!-- Ikon Instagram -->
+      <a href="https://www.instagram.com/yourpage" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+</html>

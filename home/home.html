@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="navigation">
+      <nav class="contactMoto">
+        <div class="contact-info">
+          <p class="moto">Better Internet Better Life</p>
+          <div class="left-info">
+            <i class="fa-solid fa-phone" style="color: #f2f2f3"></i>
+            <!-- bagian no telp -->
+            <a href="https://wa.me/6283814112472/?text=Hello">082195125674</a>
+            <i class="fa-solid fa-envelope" style="color: #fcfcfc"></i>
+            <a href="http://">abys@gmail.com</a>
+          </div>
+        </div>
+        <div class="socialMediaIcons">
+          <!-- Ikon WhatsApp -->
+          <a href="https://wa.me/6283814112472/?text=Hello ka, mau nanya harga paket di abys" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="color: #f2f2f3"></i>
+          </a>
+
+          <!-- Ikon Tiktok -->
+          <a href="https://web.facebook.com/andro.eka?eav=AfZWZzQfqXIog8GxRM5OAtlibom6PP25utSXqK_8Z3AnWfbn2Mb-ewtQw9fKi5Jmb5Y&paipv=0&_rdc=1&_rdr" target="_blank">
+            <i class="fa-brands fa-tiktok" style="color: #ffffff"></i>
+          </a>
+
+          <!-- Ikon Instagram -->
+          <a href="https://www.instagram.com/abysnetwork/" target="_blank">
+            <i class="fab fa-instagram" style="color: #f2f2f3"></i>
+          </a>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Bagian feature web dan mobile -->
+    <section class="features">
+      <div class="features-web">
+        <img class="logo-content" src="./assets/abyslogoterbaru.png" alt="Logo ABYS" />
+        <ul id="menuList">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="../services/service.html">Services</a></li>
+          <li><a href="../company/company.html">Company</a></li>
+          <li><a href="../coverage/coverage.html">Coverage</a></li>
+          <li><a href="../activity/activity.html" class="activity-link">Activity</a></li>
+          <li><a href="../Promotion/promotion.html">Promotion</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="../career/career.html" class="career-link">Career</a></li>
+        </ul>
+        <div id="buttonCall">
+          <a href="tel:+6285888328364">
+            <button id="call">CALL</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- bagian features-mobile -->
+      <div class="features-mobile">
+        <div class="navigationMobile">
+          <img class="logo-contentMobile" src="./assets/abysLogo.png" alt="Logo ABYS" width="90" height="50" />
+          <div class="menu-strip-3">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+          </div>
+        </div>
+        <div class="menuBars">
+          <!-- Tambahkan div baru dengan class menuBars -->
+          <ul id="menuListMobile">
+            <div class="xIconMenu">
+              <i class="fa-solid fa-x"></i>
+            </div>
+            <div>
+              <!-- Pindahkan ul ini ke dalam div menuBars -->
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="../services/service.html">Services</a></li>
+              <li><a href="../company/company.html">Company</a></li>
+              <li><a href="../coverage/coverage.html">Coverage</a></li>
+              <li><a href="../activity/activity.html" class="activity-link">Activity</a></li>
+              <li><a href="../Promotion/promotion.html">Promotion</a></li>
+              <li><a href="../contact/contact.html">Contact</a></li>
+              <li><a href="../career/career.html" class="career-link">Career</a></li>
+              <div id="buttonCallMobile">
+                <a href="tel:+6285888328364">
+                  <button id="call">CALL</button>
+                </a>
+              </div>
+              <div class="iconsMenuBars">
+                <!-- Ikon WhatsApp -->
+                <a href="https://wa.me/6283814112472/?text=Hello ka, mau nanya harga paket di abys" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <!-- Ikon Tiktok -->
+                <a href="https://www.tiktok.com/@abysnet.karawang" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <!-- Ikon Instagram -->
+                <a href="https://www.instagram.com/abysnetwork/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir bagian menu list dan nav -->
+    <div class="container">
+      <div class="containerWeb">
+        <div class="content-slide">
+          <div class="imgslide fade">
+            <img src="./assets/promoOkt1.jpg" alt="" />
+          </div>
+
+          <div class="imgslide fade">
+            <img src="./assets/promoOkt1.jpg" alt="" />
+          </div>
+
+          <div class="imgslide fade">
+            <img src="./assets/promoOkt1.jpg" alt="" />
+          </div>
+
+          <a class="prev" onClick="nextslideDesktop(-1)">&#10094;</a>
+          <a class="next" onClick="nextslideDesktop(1)">&#10095;</a>
+        </div>
+
+        <div class="page">
+          <span class="dot" onClick="dotslide(1)"></span>
+          <span class="dot" onClick="dotslide(2)"></span>
+          <span class="dot" onClick="dotslide(3)"></span>
+        </div>
+      </div>
+      <div class="containerMobile">
+        <div class="content-slideMobile">
+          <div class="imgslideMobile fadeMobile">
+            <img src="./assets/promoOkt1.jpg" alt="" />
+          </div>
+
+          <div class="imgslideMobile fadeMobile">
+            <img src="./assets/promoOkt1.jpg" alt="" />
+          </div>
+
+          <div class="imgslideMobile fadeMobile">
+            <img src="./assets/promoOkt1.jpg" alt="" />
+          </div>
+
+          <a class="prevMobile" onClick="nextslideMobile(-1)">&#10094;</a>
+          <a class="nextMobile" onClick="nextslideMobile(1)">&#10095;</a>
+        </div>
+
+        <div class="pageMobile">
+          <span class="dotMobile" onClick="dotslide(1)"></span>
+          <span class="dotMobile" onClick="dotslide(2)"></span>
+          <span class="dotMobile" onClick="dotslide(3)"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian konten web -->
+    <section id="content-abys">
+      <p class="promotionOne">Temukan Penawaran Internet dan Solusi Terbaik dari ABYS</p>
+      <p class="promotionTwo">- Better Internet Better Life -</p>
+    </section>
+
+    <!-- Bagian card box web-->
+    <section class="service-cards">
+      <div class="service-card">
+        <img class="service-logo" src="assets/internet-logo.png" alt="Logo Layanan 1" />
+        <h3 class="service-name">Layanan 1</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, necessitatibus.</p>
+      </div>
+      <div class="service-card">
+        <img class="service-logo" src="assets/db-logo.png" alt="Logo Layanan 2" />
+        <h3 class="service-name">Layanan 2</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, itaque.</p>
+      </div>
+      <div class="service-card">
+        <img class="service-logo" src="assets/cctv-logo (1).png" alt="Logo Layanan 3" />
+        <h3 class="service-name">Layanan 3</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, commodi.</p>
+      </div>
+      <div class="service-card">
+        <img class="service-logo" src="assets/comp-logo.png" alt="Logo Layanan 4" />
+        <h3 class="service-name">Layanan 4</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repudiandae!</p>
+      </div>
+    </section>
+    <!-- Akhir bagian card box -->
+
+    <!-- Bagian konten dan cardbox mobile -->
+    <section id="contentAbysMobile">
+      <p class="promotionOne">Temukan Penawaran Internet dan Solusi Terbaik dari ABYS</p>
+      <p class="promotionTwo">- Better Internet Better Life -</p>
+    </section>
+
+    <!-- Bagian cardbox -->
+    <section class="serviceCardsMobile">
+      <div class="serviceCardMobile">
+        <img class="service-logo" src="assets/internet-logo.png" alt="Logo Layanan 1" />
+        <h3 class="service-name">Layanan 1</h3>
+        <p class="service-description">ipsum dolor sit amet consectetur, adipisicing elit. Ea, necessitatibus.</p>
+      </div>
+      <div class="serviceCardMobile">
+        <img class="service-logo" src="assets/db-logo.png" alt="Logo Layanan 2" />
+        <h3 class="service-name">Layanan 2</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, itaque.</p>
+      </div>
+      <div class="serviceCardMobile">
+        <img class="service-logo" src="assets/cctv-logo (1).png" alt="Logo Layanan 3" />
+        <h3 class="service-name">Layanan 3</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, commodi.</p>
+      </div>
+      <div class="serviceCardMobile">
+        <img class="service-logo" src="assets/comp-logo.png" alt="Logo Layanan 4" />
+        <h3 class="service-name">Layanan 4</h3>
+        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repudiandae!</p>
+      </div>
+    </section>
+    <!-- Akhir Bagian konten dan cardbox mobile -->
+
+    <!-- Bagian features abys web -->
+    <section id="features-abys">
+      <div class="descFeatures">
+        <p id="descOneFeatures">Internet Terbaik Adalah Kebutuhan</p>
+        <p id="descTwoFeatures">HIDUP LEBIH BAIK KARNA :</p>
+        <ul id="listDescFeatures">
+          <li>Akses internet adalah kebutuhan penting untuk berkomunikasi, bekerja, dan mengakses informasi secara efisien.</li>
+          <li>Internet mendukung pendidikan online, memungkinkan pembelajaran jarak jauh dan akses ke sumber daya pendidikan.</li>
+          <li>Dengan pekerjaan jarak jauh semakin populer, koneksi internet yang handal adalah kebutuhan bagi banyak pekerja.</li>
+          <li>Internet juga menyediakan hiburan dengan streaming video, musik, dan game online yang memenuhi kebutuhan rekreasi.</li>
+        </ul>
+      </div>
+      <img class="features-logo" src="assets/anime1.png" alt="" />
+    </section>
+    <!-- Akhir bagian features abys web -->
+
+    <!-- Bagian features abys mobile -->
+    <section id="featuresAbysMobile">
+      <img class="features-logo" src="assets/anime1.png" alt="" />
+      <div class="descFeaturesMobile">
+        <p id="descOneFeatures">Internet Terbaik Adalah Kebutuhan</p>
+        <p id="descTwoFeatures">HIDUP LEBIH BAIK KARNA :</p>
+        <ul id="listDescFeatures">
+          <li>Akses internet adalah kebutuhan penting untuk berkomunikasi, bekerja, dan mengakses informasi secara efisien.</li>
+          <li>Internet mendukung pendidikan online, memungkinkan pembelajaran jarak jauh dan akses ke sumber daya pendidikan.</li>
+          <li>Dengan pekerjaan jarak jauh semakin populer, koneksi internet yang handal adalah kebutuhan bagi banyak pekerja.</li>
+          <li>Internet juga menyediakan hiburan dengan streaming video, musik, dan game online yang memenuhi kebutuhan rekreasi.</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Akhir Bagian features abys mobile -->
+
+    <section class="abysFact">
+      <img src="assets/anime2.png" alt="" />
+      <div class="factAboutFact">
+        <p>Keunggulan layanan internet ABYS adalah kecepatan tak tertandingi, kenyamanan tanpa buffering, dan dukungan pelanggan 24/7.</p>
+      </div>
+    </section>
+    <!-- Bagiang konten kegiatan -->
+    <section id="abysActivity">
+      <div class="technition">
+        <p class="technitionActivity">Teknisi ABYS</p>
+        <p class="technitionActivityMoto">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+      <div class="technitionActivity">
+        <div class="technitionActivityLinkOne">
+          <a href=""> <img class="pictOne" src="./assets/karaba teknisi.jpg" alt="" /> </a>
+        </div>
+        <div class="technitionActivityLinkTwo">
+          <a href="">
+            <img class="pictTwo" src="./assets/kip teknisi.jpg" alt="" />
+          </a>
+          <a href="">
+            <img class="pictThree" src="./assets/benda teknisi.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="buttonActivity">
+        <button>Lihat Kegiatan Lainnya</button>
+      </div>
+    </section>
+    <!-- Akhir bagian abysFact web -->
+
+    <!-- Bagian abys fact mobile -->
+    <section class="abysFactMobile">
+      <img src="./assets/anime2.png" alt="" />
+      <div class="factAboutFactMobile">
+        <p>Keunggulan layanan internet ABYS adalah kecepatan tak tertandingi, kenyamanan tanpa buffering, dan dukungan pelanggan 24/7.</p>
+      </div>
+    </section>
+    <!-- Bagiang konten kegiatan -->
+    <section id="abysActivityMobile">
+      <div class="technitionMobile">
+        <p class="technitionActivity">Teknisi ABYS</p>
+        <p class="technitionActivityMoto">Teknisi kami Selalu Sedia Untuk Pelanggan</p>
+      </div>
+      <div class="technitionActivityMobile">
+        <div class="technitionActivityLinkOne">
+          <a href=""> <img class="pictOne" src="./assets/karaba teknisi.jpg" alt="" /> </a>
+        </div>
+        <div class="technitionActivityLinkTwo">
+          <a href="">
+            <img class="pictTwo" src="./assets/kip teknisi.jpg" alt="" />
+          </a>
+          <a href="">
+            <img class="pictThree" src="./assets/benda teknisi.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="buttonActivityMobile">
+        <button>Lihat Kegiatan Lainnya</button>
+      </div>
+    </section>
+    <!-- Akhir bagian abys fact mobile -->
+
+    <!-- bagian abysdesc web -->
+    <section id="abysDesc">
+      <!-- Kolom pertama -->
+      <div class="columnsOne">
+        <div>
+          <h1>Cakupan Wilayah ABYS</h1>
+          <p>Karawang Timur, Kosambi, Karawang Barat</p>
+        </div>
+
+        <div>
+          <!-- Bagian 2 di kolom 1 -->
+          <h1>About us</h1>
+          <p>ABYS, Solusi Internet Terbaik untuk Kehidupan Anda!</p>
+        </div>
+      </div>
+
+      <!-- Kolom kedua -->
+      <div class="columnsTwo">
+        <div>
+          <h1>Internet ABYS</h1>
+          <p>Abys selalu berusaha untuk menyediakan layanan internet yang murah dan cepat.</p>
+        </div>
+      </div>
+
+      <!-- Kolom ketiga -->
+      <div class="columnsThree">
+        <div>
+          <h1>Contact Us</h1>
+          <div class="contactMarketing">
+            <img src="assets/marketing-modified.png" alt="" />
+            <div class="contactLink">
+              <h4>Marketing Abys</h4>
+              <p><a href="tel:(021)725124">(021)725124</a></p>
+              <p><a href="mailto:abys@gmail.id">marketing@abys.id</a></p>
+              <p><a href="https://wa.me/6283814112472/?text=Hallo ka, saya mau nanya tentang layanan di abys">Chat via Whatsapp</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir bagian abysdesc web -->
+
+    <!-- Bagian abysDesc mobile -->
+
+    <section id="abysDescMobile">
+      <!-- Kolom pertama -->
+      <div class="columnsOneMobile">
+        <div>
+          <h1>Cakupan Wilayah ABYS</h1>
+          <p>Karawang Timur, Kosambi, Karawang Barat</p>
+        </div>
+
+        <div>
+          <!-- Bagian 2 di kolom 1 -->
+          <h1>About us</h1>
+          <p>ABYS, ISP yang baru berdiri sejak tahun 2021 dengan direktur Bapak Sumali</p>
+        </div>
+      </div>
+
+      <!-- Kolom kedua -->
+      <div class="columnsTwoMobile">
+        <h1>Internet ABYS</h1>
+        <p>Abys selalu berusaha untuk menyediakan layanan internet yang murah dan cepat</p>
+      </div>
+
+      <!-- Kolom ketiga -->
+      <div class="columnsThreeMobile">
+        <h1>Contact Us</h1>
+        <div class="contactMarketing">
+          <img src="assets/marketing-modified.png" alt="" />
+          <div class="contactLink">
+            <h4>Marketing Abys</h4>
+            <p><a href="tel:(021)725124">(021)725124</a></p>
+            <p><a href="mailto:abys@gmail.id">marketing@abys.id</a></p>
+            <p><a href="https://wa.me/6283814112472/?text=Hallo ka, saya mau nanya tentang layanan di abys">Chat via Whatsapp</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Bagian abysDesc mobile -->
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/1c6a621bf6.js" crossorigin="anonymous"></script>
+  </body>
+
+  <!-- Footer web -->
+  <footer class="footerSection">
+    <div class="footerWeb">
+      <p class="footer-text">Dibuat oleh ABYS Home</p>
+      <div class="footer-icons">
+        <!-- Ikon WhatsApp -->
+        <a href="https://wa.me/6283814112472/?text=Hello" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Ikon Facebook -->
+        <a href="https://web.facebook.com/andro.eka?eav=AfZWZzQfqXIog8GxRM5OAtlibom6PP25utSXqK_8Z3AnWfbn2Mb-ewtQw9fKi5Jmb5Y&paipv=0&_rdc=1&_rdr" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <!-- Ikon Instagram -->
+        <a href="https://www.instagram.com/abysnetwork/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footerMobile">
+      <p class="footer-textMobile">Dibuat oleh ABYS Net</p>
+      <div class="footer-iconsMobile">
+        <!-- Ikon WhatsApp -->
+        <a href="https://wa.me/6283814112472/?text=Hello" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Ikon Facebook -->
+        <a href="https://web.facebook.com/andro.eka?eav=AfZWZzQfqXIog8GxRM5OAtlibom6PP25utSXqK_8Z3AnWfbn2Mb-ewtQw9fKi5Jmb5Y&paipv=0&_rdc=1&_rdr" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <!-- Ikon Instagram -->
+        <a href="https://www.instagram.com/abysnetwork/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>
